@@ -68,8 +68,8 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/photo"
-                    android:layout_centerHorizontal="true" />
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/photo" />
 
                 <TextView
                     android:id="@+id/photo_label"
@@ -192,21 +192,66 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingLeft="25dp">
+            android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:src="@drawable/user"/>
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:src="@drawable/user"
+                android:layout_margin="10dp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:paddingLeft="20dp"
-                android:text="Trần Thị Kim Ngân"
-                android:textSize="17dp"/>
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Full Name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="Trần Thị Kim Ngân"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:src="@drawable/phone"
+                android:layout_margin="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="0836197328"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -214,20 +259,34 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingLeft="25dp">
+            >
 
             <ImageView
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:src="@drawable/mail"/>
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:src="@drawable/mail"
+                android:layout_margin="10dp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:paddingLeft="20dp"
-                android:text="tranngan55599@gmail.com"
-                android:textSize="17dp"/>
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="E-Mail" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="tranngan55599@gmail.com"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -235,43 +294,37 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingLeft="25dp">
+            >
 
             <ImageView
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:src="@drawable/phone"/>
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:src="@drawable/git"
+                android:layout_margin="10dp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:paddingLeft="20dp"
-                android:text="0836197328"
-                android:textSize="17dp"/>
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Github" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="kngansokewt"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingLeft="25dp">
 
-            <ImageView
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:src="@drawable/git"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:paddingLeft="20dp"
-                android:text="kngansokewt"
-                android:textSize="17dp"/>
-
-        </LinearLayout>
 
         <Button
             android:layout_width="match_parent"
