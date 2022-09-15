@@ -4,8 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Study/HocKy122/Lap Trinh DTDD/UserProfile/app/src/main/res/drawable/image_profile.xml" value="0.2145" />
+        <entry key="..\:/Study/HocKy122/Lap Trinh DTDD/UserProfile/app/src/main/res/drawable/round_border.xml" value="0.2145" />
         <entry key="..\:/Study/HocKy122/Lap Trinh DTDD/UserProfile/app/src/main/res/font/.xml" value="0.23703703703703705" />
+        <entry key="..\:/Study/HocKy122/Lap Trinh DTDD/UserProfile/app/src/main/res/layout/activity_log_in.xml" value="0.2" />
         <entry key="..\:/Study/HocKy122/Lap Trinh DTDD/UserProfile/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Study/HocKy122/Lap Trinh DTDD/UserProfile/app/src/main/res/layout/activity_sign_up.xml" value="0.22530996152201796" />
       </map>
     </option>
   </component>
