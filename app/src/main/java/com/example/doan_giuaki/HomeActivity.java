@@ -9,17 +9,17 @@ import android.widget.Button;
 
 public class HomeActivity extends AppCompatActivity {
 
-    Button app, profile;
+    Button btnlistview, profile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        app = (Button) findViewById(R.id.app);
+        btnlistview = (Button) findViewById(R.id.btnlistview);
         profile = (Button) findViewById(R.id.profile);
 
-        app.setOnClickListener(new View.OnClickListener() {
+        btnlistview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent mh1 = new Intent(HomeActivity.this, ListviewActivity.class);
@@ -27,12 +27,12 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        profile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent mh2 = new Intent(HomeActivity.this, UserProfileActivity.class);
-                startActivity(mh2);
-            }
-        });
+//        profile.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent mh2 = new Intent(HomeActivity.this, UserProfileActivity.class);
+//                startActivity(mh2);
+//            }
+//        });
     }
 }
