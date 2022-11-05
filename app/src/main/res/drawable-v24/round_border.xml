@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--đặt thuộc tính màu và độ rộng của đường viền-->
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:color="#EABB30"
+                android:width="3dp"
+                />
+            <corners
+                android:radius="15dp" />
+
+        </shape>
+    </item>
+</layer-list>

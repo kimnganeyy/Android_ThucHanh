@@ -96,8 +96,8 @@ public class ShowListCategoryActivity extends Activity{
                     // TODO Auto-generated method stub
                     final InforData data=list.get(arg2);
                     final int pos=arg2;
-                    Toast.makeText(ShowListAuthorActivity.this, "Edit-->"+data.toString(), Toast.LENGTH_LONG).show();
-                    AlertDialog.Builder b=new Builder(ShowListAuthorActivity.this);
+                    Toast.makeText(ShowListCategoryActivity.this, "Edit-->"+data.toString(), Toast.LENGTH_LONG).show();
+                    AlertDialog.Builder b=new Builder(ShowListCategoryActivity.this);
                     b.setTitle("Remove");
                     b.setMessage("Xóa ["+data.getField2() +" - "+data.getField3() +"] hả?");
                     b.setPositiveButton("Có", new DialogInterface.OnClickListener() {
@@ -108,13 +108,13 @@ public class ShowListCategoryActivity extends Activity{
                             int n=database.delete("tblAuthors", "id=?", new String[]{data.getField1().toString()});
                             if(n>0)
                             {
-                                Toast.makeText(ShowListAuthorActivity.this, "Remove ok", Toast.LENGTH_LONG).show();
+                                Toast.makeText(ShowListCategoryActivity.this, "Remove ok", Toast.LENGTH_LONG).show();
                                 list.remove(pos);
                                 adapter.notifyDataSetChanged();
                             }
                             else
                             {
-                                Toast.makeText(ShowListAuthorActivity.this, "Remove not ok", Toast.LENGTH_LONG).show();
+                                Toast.makeText(ShowListCategoryActivity.this, "Remove not ok", Toast.LENGTH_LONG).show();
                             }
                         }
                     });
@@ -150,7 +150,7 @@ public class ShowListCategoryActivity extends Activity{
                 int n=database.update("tblAuthors", values, "id=?", new String[]{f1});
                 if(n>0)
                 {
-                    Toast.makeText(ShowListAuthorActivity.this, "update ok ok ok ", Toast.LENGTH_LONG).show();
+                    Toast.makeText(ShowListCategoryActivity.this, "update ok ok ok ", Toast.LENGTH_LONG).show();
                     dataClick.setField2(f2);
                     dataClick.setField3(f3);
                     if(adapter!=null)
